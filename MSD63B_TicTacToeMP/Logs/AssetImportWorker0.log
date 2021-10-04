@@ -1,0 +1,258 @@
+Unity Editor version:    2021.1.22f1 (a137e5fb0427)
+Branch:                  2021.1/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 10.13.6 (Build 17G14042)
+Darwin version:          17.7.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: NO
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.1.22f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/gld/Desktop/MGD_MSD63B/TicTacToeMP/MSD63B_TicTacToeMP/MSD63B_TicTacToeMP
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60784
+Successfully changed project path to: /Users/gld/Desktop/MGD_MSD63B/TicTacToeMP/MSD63B_TicTacToeMP/MSD63B_TicTacToeMP
+/Users/gld/Desktop/MGD_MSD63B/TicTacToeMP/MSD63B_TicTacToeMP/MSD63B_TicTacToeMP
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 322.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.22f1 (a137e5fb0427)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.1.22f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/gld/Desktop/MGD_MSD63B/TicTacToeMP/MSD63B_TicTacToeMP/MSD63B_TicTacToeMP/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+2021-10-04 08:57:46.720 Unity[11380:96184] InFocus 3138D preferred device: AMD Radeon R9 M395X (high power)
+2021-10-04 08:57:46.720 Unity[11380:96184] Metal devices available: 1
+2021-10-04 08:57:46.720 Unity[11380:96184] 0: AMD Radeon R9 M395X (high power)
+2021-10-04 08:57:46.724 Unity[11380:96184] Using device AMD Radeon R9 M395X (high power)
+Initializing Metal device caps: AMD Radeon R9 M395X
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.1.22f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.1.22f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.1.22f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56380
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.1.22f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000404 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 132.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.669 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4669ms)
+		BeginReloadAssembly (345ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (662ms)
+			LoadAssemblies (367ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (226ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (315ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (132ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (134ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.018503 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/gld/Desktop/MGD_MSD63B/TicTacToeMP/MSD63B_TicTacToeMP/MSD63B_TicTacToeMP/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/gld/Desktop/MGD_MSD63B/TicTacToeMP/MSD63B_TicTacToeMP/MSD63B_TicTacToeMP/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 127.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Completed reload, in  1.621 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1622ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (1367ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (502ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (560ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (128ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (304ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.1.22f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3912 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 264.4 MB.
+System memory in use after: 264.6 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 4356.
+Total: 4.058844 ms (FindLiveObjects: 0.387302 ms CreateObjectMapping: 0.206941 ms MarkObjects: 3.359810 ms  DeleteObjects: 0.103578 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/images/ai.png
+  artifactKey: Guid(c4b4c995aa081ee4bb089b13129080ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/ai.png using Guid(c4b4c995aa081ee4bb089b13129080ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d293d286baf3cff5cdbeee108b68ea5') in 0.438285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/images/Background.png
+  artifactKey: Guid(a2cad4a4d4addec42a2843d3a045be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/Background.png using Guid(a2cad4a4d4addec42a2843d3a045be24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550fcdf23bae12afacf1c549e1d5680e') in 0.045427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/images/user.png
+  artifactKey: Guid(cf026e8dc3b3f7f4bb698303f3f30163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/user.png using Guid(cf026e8dc3b3f7f4bb698303f3f30163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2874e7a2526e6347e28f678cda98af30') in 0.020741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/images/reload.png
+  artifactKey: Guid(3a2baf032e04a954cbb5aea092557511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/reload.png using Guid(3a2baf032e04a954cbb5aea092557511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df63ecb2414f6576f1f9d8368f7f31b') in 0.028630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/images/FruitBackground.png
+  artifactKey: Guid(c5101cc78b4450e4ba5f0ad5dd38d5fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/FruitBackground.png using Guid(c5101cc78b4450e4ba5f0ad5dd38d5fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94341fbea337b82c1dfa7cf776828fe8') in 0.009467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/images/FruitApple.png
+  artifactKey: Guid(709e1c484f9abc64eb3b9416684f8821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/FruitApple.png using Guid(709e1c484f9abc64eb3b9416684f8821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41fee94fbf96038062869a5668da0214') in 0.009975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/images/FruitStrawberry.png
+  artifactKey: Guid(dc325811f9f1cae49a83a254d58f8e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/FruitStrawberry.png using Guid(dc325811f9f1cae49a83a254d58f8e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c256e6dc04894c92c354391e56cb4d04') in 0.035529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.745711 seconds.
+  path: Assets/ParrelSync
+  artifactKey: Guid(41010f3d457cf4372b4dfe343335a965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ParrelSync using Guid(41010f3d457cf4372b4dfe343335a965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d20415382e97b07ef2ff044955f436') in 0.001420 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013889 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/gld/Desktop/MGD_MSD63B/TicTacToeMP/MSD63B_TicTacToeMP/MSD63B_TicTacToeMP/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/gld/Desktop/MGD_MSD63B/TicTacToeMP/MSD63B_TicTacToeMP/MSD63B_TicTacToeMP/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.642 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1643ms)
+		BeginReloadAssembly (308ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (99ms)
+		EndReloadAssembly (1266ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (469ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (358ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (258ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3911 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 280.4 MB.
+System memory in use after: 280.6 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 4477.
+Total: 17.009129 ms (FindLiveObjects: 0.319961 ms CreateObjectMapping: 0.162967 ms MarkObjects: 16.492601 ms  DeleteObjects: 0.032177 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 10.632316 seconds.
+  path: Assets/Photon
+  artifactKey: Guid(4c43439c78fee4cc081569d950a47c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon using Guid(4c43439c78fee4cc081569d950a47c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a68874ffb8920f761de0d5dc4f440e1d') in 0.006254 seconds 
