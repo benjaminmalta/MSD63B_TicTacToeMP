@@ -26,6 +26,8 @@ public class Lobby : MonoBehaviourPunCallbacks
     [Tooltip("Button Create Room")]
     public GameObject BtnCreateRoom;
 
+    List<RoomInfo> availableRooms = new List<RoomInfo>();
+
 
 
     // Start is called before the first frame update
@@ -39,6 +41,30 @@ public class Lobby : MonoBehaviourPunCallbacks
         }
 
 
+    }
+
+
+    public override void OnRoomListUpdate(List<RoomInfo> roomList)
+    {
+        print("Number of rooms:"+roomList.Count);
+        availableRooms = roomList;
+        UpdateRoomList();
+    }
+
+    private void UpdateRoomList()
+    {
+        foreach(RoomInfo roomInfo in availableRooms)
+        {
+            //instantiate row prefab
+            GameObject rowRoom = Instantiate(RowRoom);
+            rowRoom.transform.parent = ScrollViewContent.transform;
+            rowRoom.transform.localScale = Vector3.one;
+
+            //update content inside prefab
+            rowRoom.transform.Find("RoomName").GetComponent<TextMeshProUGUI>().text = roomInfo.Name;
+            rowRoom.transform.Find("RoomPlayers").GetComponent<TextMeshProUGUI>().text = roomInfo.PlayerCount.ToString();
+
+        }
     }
 
     public override void OnConnectedToMaster()
