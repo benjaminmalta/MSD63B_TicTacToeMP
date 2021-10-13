@@ -4,6 +4,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Lobby : MonoBehaviourPunCallbacks
 {
@@ -28,7 +29,7 @@ public class Lobby : MonoBehaviourPunCallbacks
 
     List<RoomInfo> availableRooms = new List<RoomInfo>();
 
-
+    UnityEngine.Events.UnityAction buttonCallback;
 
     // Start is called before the first frame update
     void Start()
@@ -64,7 +65,27 @@ public class Lobby : MonoBehaviourPunCallbacks
             rowRoom.transform.Find("RoomName").GetComponent<TextMeshProUGUI>().text = roomInfo.Name;
             rowRoom.transform.Find("RoomPlayers").GetComponent<TextMeshProUGUI>().text = roomInfo.PlayerCount.ToString();
 
+            //make button work
+            buttonCallback = () => this.OnClickJoinRoom(roomInfo.Name);
+            rowRoom.transform.Find("BtnJoin").GetComponent<Button>().onClick.AddListener(buttonCallback);
+
         }
+    }
+
+    public override void OnCreatedRoom()
+    {
+        PhotonNetwork.NickName = InputPlayerName.GetComponent<TMP_InputField>().text;
+        //load the main game level
+        PhotonNetwork.LoadLevel("MainGame");
+    }
+
+    public void OnClickJoinRoom(string roomName)
+    {
+        //set our player's nickname
+        PhotonNetwork.NickName = InputPlayerName.GetComponent<TMP_InputField>().text;
+
+        //join the room
+        PhotonNetwork.JoinRoom(roomName);
     }
 
     public override void OnConnectedToMaster()
