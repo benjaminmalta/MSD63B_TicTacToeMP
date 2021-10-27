@@ -11,6 +11,7 @@ public class CanvasManager : MonoBehaviour
     public Sprite fruitStrawberry;
     public Sprite fruitNone;
     public GameManager gameManager;
+    public NetworkManager networkManager;
 
     // Start is called before the first frame update
     void Start()
@@ -94,7 +95,8 @@ public class CanvasManager : MonoBehaviour
         //get information about gameobject (button/image) that was clicked
         PointerEventData pointerEventData = (PointerEventData)baseEvent;
         print("GameObjectClicked:" + pointerEventData.pointerClick.gameObject.name);
-        gameManager.SelectBoardPiece(pointerEventData.pointerClick.gameObject);
+        //gameManager.SelectBoardPiece(pointerEventData.pointerClick.gameObject);
+        networkManager.NotifySelectBoardPiece(pointerEventData.pointerClick.gameObject);
     }
 
 

@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviourPun
 {
     public List<Player> players = new List<Player>();
     public CanvasManager canvasManager;
@@ -13,12 +14,31 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         //-start of temp code --later on we will replace this with data from photon
-        players.Add(new Player() { id = Player.Id.Player1, nickname = "P1",
-            assignedFruit = Fruit.FruitType.Apple });
+        //players.Add(new Player() { id = Player.Id.Player1, nickname = "P1",
+        //    assignedFruit = Fruit.FruitType.Apple });
 
-        players.Add(new Player() { id = Player.Id.Player2, nickname = "P2",
-            assignedFruit = Fruit.FruitType.Strawberry });
+        //players.Add(new Player() { id = Player.Id.Player2, nickname = "P2",
+        //    assignedFruit = Fruit.FruitType.Strawberry });
         //--end of temp code
+
+        Photon.Realtime.Player[] allPlayers = PhotonNetwork.PlayerList;
+        foreach(Photon.Realtime.Player player in allPlayers)
+        {
+            if (player.ActorNumber == 1)
+                players.Add(new Player()
+                {
+                    id = Player.Id.Player1,
+                    nickname = player.NickName,
+                    assignedFruit = Fruit.FruitType.Apple
+                });
+            else if(player.ActorNumber == 2)
+            {
+                players.Add(new Player() { id = Player.Id.Player2, nickname = player.NickName,
+                    assignedFruit = Fruit.FruitType.Strawberry });
+            }
+
+        }
+
 
         ChangeTopNames();
         ChangeActivePlayer();

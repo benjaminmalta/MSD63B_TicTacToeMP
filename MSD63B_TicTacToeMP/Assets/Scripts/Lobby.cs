@@ -27,6 +27,12 @@ public class Lobby : MonoBehaviourPunCallbacks
     [Tooltip("Button Create Room")]
     public GameObject BtnCreateRoom;
 
+    [Tooltip("Panel Waiting For Player")]
+    public GameObject PanelWaitingForPlayer;
+
+    [Tooltip("Panel Lobby")]
+    public GameObject PanelLobby;
+
     List<RoomInfo> availableRooms = new List<RoomInfo>();
 
     UnityEngine.Events.UnityAction buttonCallback;
@@ -37,7 +43,7 @@ public class Lobby : MonoBehaviourPunCallbacks
         PhotonNetwork.AutomaticallySyncScene = true;
         if (!PhotonNetwork.IsConnected)
         {
-            PhotonNetwork.PhotonServerSettings.AppSettings.AppVersion = "1.0";
+            PhotonNetwork.PhotonServerSettings.AppSettings.AppVersion = "1.5";
             PhotonNetwork.ConnectUsingSettings();
         }
 
@@ -76,8 +82,18 @@ public class Lobby : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.NickName = InputPlayerName.GetComponent<TMP_InputField>().text;
         //load the main game level
-        PhotonNetwork.LoadLevel("MainGame");
+        //PhotonNetwork.LoadLevel("MainGame");
     }
+
+    public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
+	{
+        //check if there are two players in this room
+        if(PhotonNetwork.CurrentRoom.PlayerCount == 2)
+		{
+            //load main game
+			PhotonNetwork.LoadLevel("MainGame");
+		}
+	}
 
     public void OnClickJoinRoom(string roomName)
     {
@@ -92,6 +108,12 @@ public class Lobby : MonoBehaviourPunCallbacks
     {
         print("OnConnectedToMaster");
         PhotonNetwork.JoinLobby(TypedLobby.Default);
+    }
+
+    public override void OnJoinedRoom()
+    {
+        PanelLobby.SetActive(false);
+        PanelWaitingForPlayer.SetActive(true);
     }
 
     private void OnGUI()
